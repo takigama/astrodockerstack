@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.21.2
 
 ARG ASTROMETRY_URL='https://github.com/dstndstn/astrometry.net/releases/download/0.97/astrometry.net-0.97.tar.gz'
 ARG EXTRA_PACKAGES=""

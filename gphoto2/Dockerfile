@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.21.2
 
 ARG EXTRA_PACKAGES=""
 ARG BUILD_JOBS="4"
