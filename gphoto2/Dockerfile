@@ -19,3 +19,5 @@ RUN apk cache purge
 # VOLUME [ ]
 
 ADD ./entrypoint.sh /
+
+CMD ["/entrypoint.sh"]

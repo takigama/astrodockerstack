@@ -34,3 +34,5 @@ ADD ./entrypoint.sh /
 
 # why doesnt bash in alpine already have this (probably dont need it from the astrometry build)?
 RUN cp /bin/bash /bin/rbash
+
+CMD ["/entrypoint.sh"]
