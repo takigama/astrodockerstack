@@ -4,3 +4,5 @@ Its a bunch of custom containers that get built for doing astrophotography in li
  - Astrometry
  - gphoto2
  - indiserver
+
+This should be easily portable between architectures using buildx

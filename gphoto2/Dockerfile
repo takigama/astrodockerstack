@@ -3,7 +3,7 @@ FROM alpine
 ARG EXTRA_PACKAGES=""
 ARG BUILD_JOBS="4"
 ARG BUILD_PACKAGES="gcc"
-ARG BASE_PACKAGES="gphoto2"
+ARG BASE_PACKAGES="gphoto2 bash"
 
 # get our base stuff out the way
 RUN set -x \

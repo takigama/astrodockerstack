@@ -8,6 +8,8 @@ do
 	LOWER_NAME=`echo "$i" | tr '[:upper:]' '[:lower:]'`
 	echo; echo; echo
 	echo "Building $i as $LOWER_NAME:$BUILD_TAG"
-	docker build --progress=plain -t $LOWER_NAME:$BUILD_TAG . 2>&1
+	docker build --progress=plain -t $LOWER_NAME:$BUILD_TAG ./$i 2>&1
+	echo "Tag as latest"
+	docker tag $LOWER_NAME:$BUILD_TAG $LOWER_NAME:latest
 done
 ) | tee build.log
